@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Double Tetris</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <canvas id="board1" width="200" height="400"></canvas>
-  <canvas id="board2" width="200" height="400"></canvas>
-
+  <div class="container">
+    <canvas id="board1" width="200" height="400"></canvas>
+    <canvas id="board2" width="200" height="400"></canvas>
+  </div>
+  <div class="hold-box">
+    <span>Hold</span>
+    <canvas id="hold" width="80" height="80"></canvas>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
