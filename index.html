@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Double Tetris</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dual Tetris</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <canvas id="board1" width="200" height="400"></canvas>
-    <canvas id="board2" width="200" height="400"></canvas>
-  </div>
-  <div class="hold-box">
-    <span>Hold</span>
-    <canvas id="hold" width="80" height="80"></canvas>
+  <h1>Dual Tetris</h1>
+  <div id="boards">
+    <div class="board-container">
+      <canvas id="board1" width="200" height="400"></canvas>
+      <div id="revive1" class="revive-message"></div>
+    </div>
+    <div class="board-container">
+      <canvas id="board2" width="200" height="400"></canvas>
+      <div id="revive2" class="revive-message"></div>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
